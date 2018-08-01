@@ -1,6 +1,8 @@
 
 转载自：https://segmentfault.com/a/1190000006599500#articleHeader6。
 
+Watcher，Dep，Observer源码解读：https://juejin.im/post/5a734b6cf265da4e70719386
+
 主要是加了些注释：
 
 实现mvvm的双向绑定，就必须要实现以下几点：
