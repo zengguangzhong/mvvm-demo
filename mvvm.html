@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MVVM</title>
+</head>
+<body>
+    <div id="mvvm-app"><p class='username'>{{userInfo.name}}</p><!-- <input type="text" v-model="counter"><p class='counter1'>{{counter}}</p><div class='counter2'>{{counter}}</div> --></div>
+<!-- <script src="http://cdn.bootcss.com/vue/1.0.25/vue.js"></script> -->
+<script src="./js/observer.js"></script>
+<script src="./js/watcher.js"></script>
+<script src="./js/compile.js"></script>
+<script src="./js/mvvm.js"></script>
+<script>
+    window.vm = new MVVM({
+        el: '#mvvm-app',
+        data: {
+            // counter: 0,
+            userInfo:{
+                name:'',
+                password:''
+            }
+        },
+
+        computed: {
+            // getHelloWord: function() {
+            //     return this.someStr + this.child.someStr;
+            // }
+        },
+
+        methods: {
+            clickBtn(){
+                this.counter= 1
+            },
+            getBtn(){
+                var a= this.counter;
+                console.log(this.counter)
+            }
+            // clickBtn: function(e) {
+            //     var randomStrArr = ['childOne', 'childTwo', 'childThree'];
+            //     this.child.someStr = randomStrArr[parseInt(Math.random() * 3)];
+            // }
+        }
+    });
+
+    // vm.$watch('child.someStr', function() {
+    //     console.log(arguments);
+    // });
+</script>
+
+</body>
+</html>
