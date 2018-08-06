@@ -1,7 +1,17 @@
 
 转载自：https://segmentfault.com/a/1190000006599500#articleHeader6。
 
+
+
+
 Watcher，Dep，Observer源码解读：https://juejin.im/post/5a734b6cf265da4e70719386
+
+深度解析 Vue 响应式原理：https://juejin.im/post/5b5eb69a5188251af86bfe00
+
+
+
+
+
 
 主要是加了些注释：
 
